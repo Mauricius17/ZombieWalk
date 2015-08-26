@@ -21,6 +21,12 @@ public class FrozenZombie extends EntityZombie {
 	public void m() {
 		if(Utils.getLocation() != null) {
 			super.m();
+			
+			if(bukkitEntity.getLocation().distance(Utils.getLocation()) <= 2) {
+				Utils.setLocation(null);
+				return;
+			}
+			
 			((EntityInsentient) (bukkitEntity).getHandle()).getNavigation().a(Utils.getLocation().getX(), Utils.getLocation().getY(), Utils.getLocation().getZ(), 1.3);
 		}
 	}
