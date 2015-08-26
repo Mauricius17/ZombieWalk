@@ -1,0 +1,5 @@
+name: ZombieWalk
+author: Mauricius17
+version: 1.0
+
+main: de.mauricius17.zombiewalk.system.ZombieWalk
