@@ -22,7 +22,7 @@ public class FrozenZombie extends EntityZombie {
 		if(Utils.getLocation() != null) {
 			super.m();
 			
-			if(bukkitEntity.getLocation().distance(Utils.getLocation()) <= 2) {
+			if(bukkitEntity.getLocation().distance(Utils.getLocation()) < 2) {
 				Utils.setLocation(null);
 				return;
 			}
